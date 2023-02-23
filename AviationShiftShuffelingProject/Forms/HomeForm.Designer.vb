@@ -37,11 +37,11 @@ Partial Class HomeForm
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.cbShift = New System.Windows.Forms.ComboBox()
+        Me.cbDay = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cbST = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -60,11 +60,11 @@ Partial Class HomeForm
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.ComboBox2)
-        Me.Panel1.Controls.Add(Me.ComboBox4)
+        Me.Panel1.Controls.Add(Me.cbShift)
+        Me.Panel1.Controls.Add(Me.cbDay)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.ComboBox1)
+        Me.Panel1.Controls.Add(Me.cbST)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.DateTimePicker1)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -137,7 +137,7 @@ Partial Class HomeForm
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(70, 15)
+        Me.PictureBox1.Location = New System.Drawing.Point(67, 34)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(121, 59)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -164,21 +164,21 @@ Partial Class HomeForm
         Me.Label5.TabIndex = 18
         Me.Label5.Text = "CEYLON PETROLEUM CORPORATION - AVIATION FUNCTION"
         '
-        'ComboBox2
+        'cbShift
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(701, 165)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(141, 23)
-        Me.ComboBox2.TabIndex = 16
+        Me.cbShift.FormattingEnabled = True
+        Me.cbShift.Location = New System.Drawing.Point(701, 165)
+        Me.cbShift.Name = "cbShift"
+        Me.cbShift.Size = New System.Drawing.Size(141, 23)
+        Me.cbShift.TabIndex = 16
         '
-        'ComboBox4
+        'cbDay
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(530, 166)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(141, 23)
-        Me.ComboBox4.TabIndex = 15
+        Me.cbDay.FormattingEnabled = True
+        Me.cbDay.Location = New System.Drawing.Point(530, 166)
+        Me.cbDay.Name = "cbDay"
+        Me.cbDay.Size = New System.Drawing.Size(141, 23)
+        Me.cbDay.TabIndex = 15
         '
         'Label4
         '
@@ -198,13 +198,13 @@ Partial Class HomeForm
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Day"
         '
-        'ComboBox1
+        'cbST
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(359, 166)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(141, 23)
-        Me.ComboBox1.TabIndex = 5
+        Me.cbST.FormattingEnabled = True
+        Me.cbST.Location = New System.Drawing.Point(359, 166)
+        Me.cbST.Name = "cbST"
+        Me.cbST.Size = New System.Drawing.Size(141, 23)
+        Me.cbST.TabIndex = 5
         '
         'Label2
         '
@@ -235,14 +235,14 @@ Partial Class HomeForm
         '
         Me.Panel2.Location = New System.Drawing.Point(999, 1)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(14, 282)
+        Me.Panel2.Size = New System.Drawing.Size(161, 282)
         Me.Panel2.TabIndex = 1
         '
         'HomeForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1012, 697)
+        Me.ClientSize = New System.Drawing.Size(1165, 697)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.Name = "HomeForm"
@@ -259,11 +259,11 @@ Partial Class HomeForm
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cbST As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents cbShift As ComboBox
+    Friend WithEvents cbDay As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label5 As Label
