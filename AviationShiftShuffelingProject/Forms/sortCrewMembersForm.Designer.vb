@@ -23,6 +23,7 @@ Partial Class sortCrewMembersForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnLeave = New System.Windows.Forms.Button()
         Me.lvRic = New System.Windows.Forms.ListBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -35,6 +36,7 @@ Partial Class sortCrewMembersForm
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.PowderBlue
+        Me.Panel1.Controls.Add(Me.btnLeave)
         Me.Panel1.Controls.Add(Me.lvRic)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
@@ -45,6 +47,15 @@ Partial Class sortCrewMembersForm
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(400, 452)
         Me.Panel1.TabIndex = 0
+        '
+        'btnLeave
+        '
+        Me.btnLeave.Location = New System.Drawing.Point(96, 82)
+        Me.btnLeave.Name = "btnLeave"
+        Me.btnLeave.Size = New System.Drawing.Size(78, 35)
+        Me.btnLeave.TabIndex = 8
+        Me.btnLeave.Text = "Leave "
+        Me.btnLeave.UseVisualStyleBackColor = True
         '
         'lvRic
         '
@@ -78,6 +89,7 @@ Partial Class sortCrewMembersForm
         '
         Me.lvCrewman.AllowDrop = True
         Me.lvCrewman.FormattingEnabled = True
+        Me.lvCrewman.IntegralHeight = False
         Me.lvCrewman.ItemHeight = 15
         Me.lvCrewman.Location = New System.Drawing.Point(16, 82)
         Me.lvCrewman.Name = "lvCrewman"
@@ -121,4 +133,5 @@ Partial Class sortCrewMembersForm
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents lvRic As ListBox
+    Friend WithEvents btnLeave As Button
 End Class
