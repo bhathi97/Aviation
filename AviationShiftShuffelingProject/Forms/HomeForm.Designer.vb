@@ -54,6 +54,7 @@ Partial Class HomeForm
         '
         'Panel1
         '
+        '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Panel1.Controls.Add(Me.DataGridView1)
         Me.Panel1.Controls.Add(Me.PictureBox2)
@@ -137,7 +138,7 @@ Partial Class HomeForm
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(67, 34)
+        Me.PictureBox1.Location = New System.Drawing.Point(63, 30)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(121, 59)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
